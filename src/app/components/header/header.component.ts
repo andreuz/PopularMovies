@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+/**
+ * @class HeaderComponent
+ * Componente de banner que muestra las peliculas mejor valoradas.
+ */
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -11,10 +14,4 @@ export class HeaderComponent implements OnInit {
     "https://dj5bdikd87jif.cloudfront.net/tablet/channels_cover/89szXtWz3DsNn_r2KgemSnRhMaJ_768x160.jpg",
     "https://malta-english.com/wp-content/uploads/2017/09/ME-header2-1.jpg"
   ];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

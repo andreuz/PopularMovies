@@ -1,3 +1,7 @@
+/**
+ * @class Movie
+ * Clase que abstrae la información de cada una de las peliculas populares.
+ */
 export class Movie {
     public vote_count: number;
     public id: number;
