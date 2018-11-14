@@ -3,18 +3,18 @@
 </div>
 
 <div class="container">
-  <div class="m-3">
-    <div class="row" *ngIf="pageResults">
-      <div *ngFor="let movie of pageResults.results; let i = index" class="col-md-2 m-2 text-center">
+  <div class="m-5">
+    <div class="grid-class" *ngIf="pageResults">
+      <div *ngFor="let movie of pageResults.results; let i = index">
         <img class="img-responsive" src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="imagen">
-        <p class="mb-0 pb-0 text text-center">
+        <p class="title">
           <a routerLink="/detail/{{movie.id}}">{{movie.title}}</a>
         </p>
         <div class="pt-0 mt-0">
           <div class="font-weight-bold col-xs-6 float-left">
             <p>{{movie.release_date}}</p>
           </div>
-          <div class="col-xs-6 float-right">
+          <div class="col-xs-6 float-right score">
             <p class="text-warning">{{movie.vote_average}}</p>
           </div>
         </div>
@@ -22,3 +22,4 @@
     </div>
   </div>
 </div>
+

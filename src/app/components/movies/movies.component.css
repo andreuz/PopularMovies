@@ -1,0 +1,16 @@
+.grid-class{
+    display: grid !important;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, 185px);
+  }
+  .title{
+    text-align: center;
+    margin: 1em;
+    font-family:  Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  .score{
+    font-family:  Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em
+  }
